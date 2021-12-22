@@ -10,23 +10,46 @@
     
     <h1>Exam Result</h1>
 
-<form action="index.html" method="post">
+<form name="MyForm" action="" method="post">
 
     <label for="turbo">Turbo C</label>
-    <input type="text" name="turbo_mark" id="turbo" placeholder="Enter Turbo C Mark" required>
+    <input type="number" name="turbo_mark" id="turbo" placeholder="Enter Turbo C Mark" required>
     <br><br>
 
     <label for="java">Java</label>
-    <input type="text" name="java_mark" id="java" placeholder="Enter Java Mark" required>
+    <input type="number" name="java_mark" id="java" placeholder="Enter Java Mark" required>
     <br><br>
 
     <label for="JavaScript">JavaScript</label>
-    <input type="text" name="script_mark" id="JavaScript" placeholder="Enter JavaScript Mark" required>
+    <input type="number" name="script_mark" id="JavaScript" placeholder="Enter JavaScript Mark" required>
     <br><br>
 
-    <button type="submit">Result</button>
+    <button type="button" onclick="result()">Result</button>
 
 </form>
+
+<script>
+
+    function result(){
+        let turbo_mark = document.MyForm.turbo_mark.value;
+        console.log(turbo_mark);
+        let java = document.MyForm.java.value;
+        console.log(java);
+        let JavaScript = document.MyForm.JavaScript.value;
+        console.log(JavaScript);
+
+        // Assignment (pass mark=50/ distation mark=81)
+        if (turbo_mark > 80 || java > 80 || JavaScript > 80){
+            document.write("<h1>This Student Passed With Distinction!</h1>")
+        }else if (turbo_mark < 50 || java < 50 || JavaScript < 50){
+            document.write("<h1>This Student Failed!</h1>")
+        }else{
+            document.write("<h1>This Student Passed!</h1>")
+        }
+
+    }
+    
+</script>
 
 </body>
 </html>
