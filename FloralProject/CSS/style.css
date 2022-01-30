@@ -1,0 +1,254 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Navigation Start */
+@font-face{
+    src:url(../Neonderthaw-Regular.ttf);
+    font-family: neon;
+}
+@font-face{
+    src:url(../Cookie-Regular.ttf);
+    font-family: cookie;
+}
+
+.logo{
+    width: 85px;
+    height: 85px;
+    margin-left: 40px;
+    /* margin-top:10px; */
+}
+
+.brandname{
+    margin-left: 115px;
+    margin-top: -45px;
+    font-size: 25px;
+    font-family: neon;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+nav.nav_bar ul{
+    float: right;
+}
+nav.nav_bar ul li{
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.nav_bar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav_bar{
+    height: 100px;
+}
+
+.nav_bar ul li a:hover{
+    color: lightsalmon;
+    letter-spacing: 4px;
+    transition-duration: 0.5s;
+}
+/* Navagation End */
+
+
+/* Background Start */
+.img{
+    /* float: right; */
+    margin-left: 40%;
+    height: 450px;
+    width: 700px;
+}
+
+.background_text{
+    position: absolute;
+    top: 218px;
+    left: 120px;
+}
+
+.perfect{
+    font-family: cookie;
+    /* font-weight: unset; */
+    margin-bottom: 40px;
+}
+
+.shop{
+    background-color: whitesmoke;
+    border: 1px solid lightsalmon;
+    color: lightsalmon;
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    margin-top: 28px;
+    text-decoration: none;
+    padding: 7px 14px;
+    display: inline-block;
+}
+/* Background End */
+
+
+/* Product Start */
+.header{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.divided{
+    width: 100px;
+    margin: auto;
+    border: 2px solid lightcoral;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    grid-gap: 50px;
+}
+.product_name{
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.product_img{
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .30);
+    transition-duration: 0.5s;
+}
+.product_img:hover{
+    transform: translateY(-5px);
+}
+
+.red{
+    color: red;
+}
+/* Product End */
+
+
+/* About Start */
+.about{
+    background-image: url(../images/aboutbg.jpg);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 70px;
+}
+
+.about div{
+    padding: 50px;
+}
+.about div hr{
+    width: 40px;
+    margin: auto;
+/* already used margin: auto; for the sizes */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* About End */
+
+
+/* Packaging Start */
+.package{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+div.float img{
+    height: 32%;
+    width: 32%;
+    float: left;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+div.float{
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    margin-top: 30px;
+    margin-right: 70px;
+    /* grid-gap: 30px; */
+}
+div.float h4{
+    margin-top: 30px;
+    margin-left: 500px;
+}
+div.float p{
+    margin-left: 500px;
+}
+
+/* Sir Explanation */
+
+/* .packaging_img{
+    max-width: 50%;
+    float: left;
+    border-radius: 5px;
+}
+
+.packaging{
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.packaging_text{
+    position: relative;
+    left: 50px;
+    width: 90%;
+    text-align: justify;
+} 
+
+.packaging_header{
+    margin-top: 20px;
+} */
+.clear{
+    clear: both;
+}
+/* Packaging End */
+
+
+/* Icon Start */
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    background-image: linear-gradient(wheat,lightcoral);
+    padding: 30px 0px 30px 30px;
+}
+.support_icon p{
+    display: inline-block;
+    margin-left: 30px;
+}
+/* Icon End */
+
+
+/* Footer Start */
+.footer{
+    background-color: #212529;
+    height: 170px;
+}
+.nav{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    font-weight: bold;
+    margin: 50px 20px 0px;
+}
+.designed{
+    color: gray;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.icon{
+    color: gray;
+    display: inline-block;
+    margin: 20px 10px 0px;
+}
+/* Footer End */
+/* Home Page End */

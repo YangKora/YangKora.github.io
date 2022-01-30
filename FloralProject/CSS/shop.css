@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.our_products{
+    font-family: cookie;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: lightcoral;
+}
+
+.shop img{
+    width: 250px;
+    margin: auto;
+    height: 300px;
+    border-radius: 15%;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .30);
+    transition-duration: 0.5s;
+}
+.shop img:hover{
+    transform: translateY(-7px);
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.star{
+    color: orangered;
+}
+.shop h3{
+    margin-top: 20px;
+}
+
+.hr{
+    margin-top: 30px;
+    width: 800px;
+    margin-left: auto;
+    border: 4px solid lightcoral;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+/* Catagories Start */
+.catagories{
+    text-align: center;
+    color: lightcoral;
+    font-family: cookie;
+    margin-bottom: 5px;
+}
+
+.types{
+    margin: 60px;
+    margin-top: -10px;
+    margin-bottom: -10PX;
+}
+.types a{
+    border: 2px double lightcoral;
+    width: 150px;
+    display: inline-block;
+    margin: 16px;
+    border-radius: 20px;
+    background-color: lightcoral;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: lavenderblush;
+}
+.types a:hover{
+    color: lightcoral;
+    transition-duration: 0.5s;
+    background-color: lavenderblush;
+}
+
+/* Catagories End */
+
+.hr1{
+    margin-top: 20px;
+    width: 800px;
+    border: 4px solid lightcoral;
+    border-radius: 15px;
+}
+
+/* Navigation Start */
+@font-face{
+    src:url(../Neonderthaw-Regular.ttf);
+    font-family: neon;
+}
+@font-face{
+    src:url(../Cookie-Regular.ttf);
+    font-family: cookie;
+}
+
+.logo{
+    width: 85px;
+    height: 85px;
+    margin-left: 40px;
+    /* margin-top:10px; */
+}
+
+.brandname{
+    margin-left: 115px;
+    margin-top: -45px;
+    font-size: 25px;
+    font-family: neon;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+nav.nav_bar ul{
+    float: right;
+}
+nav.nav_bar ul li{
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.nav_bar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav_bar{
+    height: 100px;
+}
+
+.nav_bar ul li a:hover{
+    color: lightsalmon;
+    letter-spacing: 4px;
+    transition-duration: 0.5s;
+}
+/* Navagation End */
+
+/* Footer Start */
+.footer{
+    margin-top: 50px;
+    background-color: #212529;
+    height: 170px;
+}
+.nav{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    font-weight: bold;
+    margin: 50px 20px 0px;
+}
+.designed{
+    color: gray;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.icon{
+    color: gray;
+    display: inline-block;
+    margin: 20px 10px 0px;
+}
+/* Footer End */
