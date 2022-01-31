@@ -113,19 +113,19 @@ fieldset h3{
     font-weight: bold;
     color: lightcoral;
     outline: none;
-    cursor: pointer;
+    border-color: lightcoral;
 }
 
-.read:hover{
-    border-color: lightcoral;
-    color: wheat;
+/* .read:hover{
+    border-color: lavenderblush;
     background-color: lavenderblush;
     transition-duration: 0.7s;
-}
+    color: lavenderblush;
+} */
 
 .read:focus{
     background-color: lightcoral;
-    color: wheat;
+    color: whitesmoke;
 }
 
 
