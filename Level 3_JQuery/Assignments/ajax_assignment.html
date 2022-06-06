@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+
+    <link rel="stylesheet" href="../jquery-3.6.0.min.js">
+
+    <style>
+        .generateMemes{
+            margin: 20px auto;
+            width: 400px;
+        }
+
+        .generateMemes label{
+            display: block;
+            margin-bottom: 10px;
+            font-size: medium;
+        }
+
+        .generateMemes input{
+            width: 80%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        #memes{
+            width: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="generateMemes">
+        <label for="">Choose an Image</label> <input type="file" name="" id="imgInput">
+        <br>
+        <label for="topText">Top Text</label> <input type="text" id="topText">
+        <br>
+        <label for="bottomText">Bottom Text</label> <input type="text" id="bottomText">
+    
+        <canvas id="memes"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+            
+
+<!-- -$.get => show meme photo => hori scroll
+-image ckick event
+    -clicked photo / inputs (dynamic)
+-generate meme btn click event => uae $.post method
+-show -generated photo -->

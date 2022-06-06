@@ -1,0 +1,71 @@
+<!-- Wednesday >> 4/5/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_1</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+    <script src="../jquery-3.6.0.min.js"></script>
+    
+    <script>    
+        function check(){
+            if(document.getElementById('married').checked){
+                document.getElementById('ifmarried').style.visibility = 'visible';
+            }else{
+                document.getElementById('ifmarried').style.visibility = 'hidden';
+            }
+            $("form").on("submit",function(){
+                var name = $("#name").val()
+                var age = $("#age").val()
+                var spouse = $("#spouse").val()
+                var text1 = `Name is ${name}. Age is ${age} years old and Single.`
+                var text2 = `Name is ${name}. Age is ${age} years old and Married. Spouse's name is ${spouse}.`
+                if(document.getElementById('single').checked){
+                    alert(text1);
+                }else{
+                    alert(text2);
+                }
+                
+            })
+        }
+    </script>
+
+</head>
+<body>
+    
+    <fieldset>
+        <legend>
+            <h2 style="color: steelblue;">Exercise1_4.5.2022</h2>
+        </legend>
+        <div>
+            <form action="" id="form">
+                <input type="text" class="name" id="name" placeholder="Name">
+                <br><br>
+                <input type="number" class="age" id="age" placeholder="Age">
+                <br><br>
+                
+                <input type="radio" onclick="javascript:check()" name="choose" value="single" id="single"><label for="single">Single</label>
+                <input type="radio" onclick="javascript:check()" name="choose" value="married" id="married"><label for="married">Married</label>
+                <br><br>
+                <div id="ifmarried" style="visibility: hidden;">
+                    <input type="text" id="spouse" name="spouse" placeholder="Spouse's Name">
+                </div>
+                <!-- <div id="spouse" class="spouse">
+                    <input type="text" placeholder="Spouse's Name">
+                </div> -->
+                <br><br>
+                <button type="submit" value="Save">Save</button>
+
+            </form>
+        </div>
+    </fieldset>
+
+</body>
+</html>
